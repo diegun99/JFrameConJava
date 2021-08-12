@@ -43,6 +43,11 @@ public class VOpciones extends javax.swing.JFrame {
         });
 
         BtnGestionSemoviente.setText("Gestionar Semoviente");
+        BtnGestionSemoviente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnGestionSemovienteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -83,6 +88,10 @@ public class VOpciones extends javax.swing.JFrame {
                 ControladorPantallas.abrirPantallaEmpleado();
                 // TODO add your handling code here:
     }//GEN-LAST:event_btnGestionEmpleadoActionPerformed
+
+    private void BtnGestionSemovienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGestionSemovienteActionPerformed
+        ControladorPantallas.abrirPantallaSemoviente();// TODO add your handling code here:
+    }//GEN-LAST:event_BtnGestionSemovienteActionPerformed
 
     /**
      * @param args the command line arguments
